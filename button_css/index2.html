@@ -6,37 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .button1{
-            position: relative;
-            display: inline-block;
-            text-decoration: none;
-            text-transform: uppercase;
-            color: rgba(56, 32, 32, 0.149);
-            outline: 2px solid #7EFFB2;
-            padding: 30px 60px;
-            overflow: hidden;
-            transition: color 1s;
-        }
-        .button1:hover{
-            color: #090909;
-        }
-        .button1::before{
-            content: "";
-            position: absolute;
-            top: 0;
-            left: -50px;
-            z-index: -1;
-            width: 150%;
-            height: 100%;
-            background-color: #7EFFB2;
-            transform: scaleX(0) skewX(35deg);
-            transform-origin: left;
-            transition: transform 1s;
-        }
-        .button1:hover::before{
-            transform: scaleX(1) skewX(35deg);
-        }
-        .button1{
+        .button{
             position: relative;
             width: 70px;
             height: 30px;
@@ -48,7 +18,7 @@
             cursor: pointer;
             transition: width .5s, border-radius .5s;
         }
-        .button1 *{
+        .button *{
             position: absolute;
             top: 50%;
             left: 50%;
@@ -58,25 +28,22 @@
         .icon{
             opacity: 0;
         }
-        .button1:focus{
+        .button:focus{
             width: 30px;
             background-color: #44c08a;
             border-radius: 50%;
         }
-        .button1:focus .text{
+        .button:focus .text{
             opacity: 0;
         }
-        .button1:focus .icon{
+        .button:focus .icon{
             opacity: 1;
             transition-delay: .5s;
         }
    </style>
 </head>
 <body>
-    <div class="button1">
-        learn more
-    </div>
-    <button class="button2">
+    <button class="button">
         <span class="text">Submit</span>
         <i class="ri-check-line icon"></i>
     </button>
