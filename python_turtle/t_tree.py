@@ -1,6 +1,7 @@
 # 사용법
 # https://docs.python.org/ko/3/library/turtle.html
 # https://blog.naver.com/python_math/221214856867
+# https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=kkj6369&logNo=221248236812
 
 import turtle
 

@@ -5,9 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css" type="text/css">
+    <style>
+        .button{
+            position: relative;
+            display: inline-block;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: rgba(56, 32, 32, 0.149);
+            outline: 2px solid #7EFFB2;
+            padding: 30px 60px;
+            overflow: hidden;
+            transition: color 1s;
+        }
+        .button:hover{
+            color: #090909;
+        }
+        .button::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -50px;
+            z-index: -1;
+            width: 150%;
+            height: 100%;
+            background-color: #7EFFB2;
+            transform: scaleX(0) skewX(35deg);
+            transform-origin: left;
+            transition: transform 1s;
+        }
+        .button:hover::before{
+            transform: scaleX(1) skewX(35deg);
+        }
+   </style>
 </head>
 <body>
-    <button>button</button>
+    <dvi class="button">
+        learn more
+    </dvi>
 </body>
 </html>
